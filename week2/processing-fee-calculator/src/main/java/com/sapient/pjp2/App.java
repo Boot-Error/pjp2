@@ -27,7 +27,6 @@ public class App
 
 		System.out.println("Writing the results to: " + outFilename);
 		pfc.writeResults(outFilename);
- b
 		System.out.println("Done :)");
 
     }
