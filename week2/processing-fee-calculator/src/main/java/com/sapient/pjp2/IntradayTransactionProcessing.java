@@ -38,14 +38,14 @@ implements TransactionProcessor
 	public List<ProcessingFeeResult> processTransactions(List<Transaction> transactions)
 	{
 		List<Transaction> buyTransactions = transactions
-													.stream()
-													.filter(tr -> tr.transactionType == Transaction.TransactionType.BUY)
-													.collect(Collectors.toList());
+			.stream()
+			.filter(tr -> tr.transactionType == Transaction.TransactionType.BUY)
+			.collect(Collectors.toList());
 
 		List<Transaction> sellTransactions = transactions
-													.stream()
-													.filter(tr -> tr.transactionType == Transaction.TransactionType.SELL)
-													.collect(Collectors.toList());
+			.stream()
+			.filter(tr -> tr.transactionType == Transaction.TransactionType.SELL)
+			.collect(Collectors.toList());
 
 		for (Transaction bTr: buyTransactions)
 		{
